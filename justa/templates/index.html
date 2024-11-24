@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <meta name="author" content="Jose Dilone 21-0838">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
     <link rel="icon" href="img\icon.png">    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
@@ -20,7 +21,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-              <img src="img\logo.png" alt="Hirono">
+              <img src="{% static 'img\logo.png'%}" alt="Hirono">
             </div>
             <ul class="nav-items">
               <li><a href="#Form-area">Iniciar sesion</a></li>
@@ -35,7 +36,7 @@
     <div id="Hero" class="container">
 
         <div class="item1">
-            <img src="img/hero.png" id="hero-img" alt="Hirono">
+            <img src="{% static 'img/hero.png' %}" id="hero-img" alt="Hirono">
         </div>
 
         <div class="item2">
@@ -104,7 +105,7 @@
     <div id="Cards">
 
         <div class="card">
-            <img src="img\create.jpeg" class="card-img-top" alt="...">
+            <img src="{%static 'img\create.jpeg' %}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">CREA</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -112,7 +113,7 @@
         </div>
 
         <div class="card">
-            <img src="img\compartir.jpg" class="card-img-top" alt="...">
+            <img src="{%static 'img\compartir.jpg' %}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">COMPARTE</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -120,7 +121,7 @@
         </div>
 
         <div class="card">
-            <img src="img\inspire.jpeg" class="card-img-top" alt="...">
+            <img src="{%static 'img\inspire.jpeg' %}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">INSPIRA</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -138,7 +139,7 @@
             </div>
         </div>
         <div class="item4">
-            <img src="img\creativity.png" id="hero-img" alt="Hirono">
+            <img src="{%static 'img\creativity.png' %}" id="hero-img" alt="Hirono">
         </div>
     </div>
 
@@ -152,7 +153,7 @@
 
                     <div class="cardBlog">
                       <a href="blog3.html">
-                        <img src="img\museum.jpg" class="card-img-top" alt="...">
+                        <img src="{%static 'img\museum.jpg' %}" class="card-img-top" alt="...">
                       </a>
                         <div class="card-body">
                           <h5 class="card-titleBlog">CREA</h5>
@@ -162,7 +163,7 @@
             
                     <div class="cardBlog">
                       <a href="blog2.html">
-                        <img src="img\digital.jpg" class="card-img-topBlog" alt="...">
+                        <img src="{%static 'img\digital.jpg' %}" class="card-img-topBlog" alt="...">
                       </a>
                         <div class="card-body">
                           <h5 class="card-titleBlog">COMPARTE</h5>
@@ -178,7 +179,7 @@
 
                 <div id="CardsBlog">
                     <div class="cardBlog">
-                        <img src="img\create.jpeg" class="card-img-topBlog" alt="...">
+                        <img src="{%static 'img\create.jpeg' %}" class="card-img-topBlog" alt="...">
                         <div class="card-body">
                           <h5 class="card-titleBlog">CREA</h5>
                           <p class="card-textBlog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -186,7 +187,7 @@
                     </div>
             
                     <div class="cardBlog">
-                        <img src="img\share.jpeg" class="card-img-topBlog" alt="...">
+                        <img src="{%static 'img\share.jpeg' %}" class="card-img-topBlog" alt="...">
                         <div class="card-body">
                           <h5 class="card-titleBlog">COMPARTE</h5>
                           <p class="card-textBlog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -201,7 +202,7 @@
 
                 <div id="CardsBlog">
                     <div class="cardBlog">
-                        <img src="img\create.jpeg" class="card-img-topBlog" alt="...">
+                        <img src="{%static 'img\create.jpeg' %}" class="card-img-topBlog" alt="...">
                         <div class="card-body">
                           <h5 class="card-titleBlog">CREA</h5>
                           <p class="card-textBlog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -209,7 +210,7 @@
                     </div>
             
                     <div class="cardBlog">
-                        <img src="img\share.jpeg" class="card-img-topBlog" alt="...">
+                        <img src="{%static 'img\share.jpeg' %}" class="card-img-topBlog" alt="...">
                         <div class="card-body">
                           <h5 class="card-titleBlog">COMPARTE</h5>
                           <p class="card-textBlog">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -236,7 +237,7 @@
     <!--Login y register-->
     <div id="Form-area">
         <div id="item5">
-            <img src="img\share.jpeg" class="FormIMG" alt="...">
+            <img src="{%static 'img\share.jpeg' %}" class="FormIMG" alt="...">
         </div>
         <form id="item6">
             <h1>REGISTRATE</h1>
